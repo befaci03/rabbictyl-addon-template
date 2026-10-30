@@ -1,0 +1,16 @@
+{
+  "id": "template_addon",
+  "name": "Template Addon",
+  "version": "1.0.0",
+  "description": "A starting point for RabbiCtyl add-ons. Rename the folder so it matches the id.",
+  "author": "Your name",
+  "enabled": true,
+  "assembly": "lib/RabbiCtyl.Addon.Template.dll",
+  "entry": "RabbiCtyl.Addon.Template.TemplateAddon",
+  "scripts": [
+    "scripts/main.ts"
+  ],
+  "assets": {
+    "icon": "assets/icon.svg"
+  }
+}

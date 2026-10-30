@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>RabbiCtyl.Addon.Template</AssemblyName>
+    <RootNamespace>RabbiCtyl.Addon.Template</RootNamespace>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <OutputPath>../lib/</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <!-- Point this at your panel checkout (or pass -p:RabbiCtylPanelDir=...). -->
+    <RabbiCtylPanelDir Condition="'$(RabbiCtylPanelDir)' == ''">..\..\rabbictyl-panel-</RabbiCtylPanelDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="$(RabbiCtylPanelDir)\src\RabbiCtyl.Addons.Abstractions\RabbiCtyl.Addons.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>
